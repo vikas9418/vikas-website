@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondarva Vikas - Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f3f4f6;
+            color: #000;
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, navy, black);
+            color: white;
+            padding: 35px;
+            text-align: center;
+            animation: fadeDown 1s ease-in-out;
+        }
+
+        @keyframes fadeDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Section */
+        section {
+            padding: 40px;
+            animation: fadeUp 1s ease-in-out;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: navy;
+            margin-bottom: 15px;
+            border-left: 6px solid navy;
+            padding-left: 12px;
+        }
+
+        /* Grid Layout */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        /* Stylish Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        table:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        th {
+            background-color: navy;
+            color: white;
+            padding: 12px;
+            font-size: 17px;
+            letter-spacing: 1px;
+        }
+
+        td {
+            padding: 12px;
+            background-color: #eef0f3;
+            font-size: 15px;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #e3e7ec;
+        }
+
+        /* Hover card box effect */
+        .box {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        /* Contact */
+        .contact p {
+            font-size: 17px;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 18px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sondarva Vikas</h1>
+    <p>Software Development Enthusiast</p>
+</header>
+
+<!-- Myself -->
+<section>
+    <h2>Myself</h2>
+    <div class="box">
+        <p>Hello! I’m <strong>Sondarva Vikas</strong>, an enthusiastic and motivated student passionate about software development.
+           I enjoy learning programming, solving logical problems and exploring how technology can improve life.
+        </p>
+    </div>
+</section>
+
+<!-- Studies -->
+<section>
+    <h2>Studies</h2>
+
+    <div class="grid">
+
+        <!-- High School Table -->
+        <div>
+            <h3 style="color:black;">High School Education</h3>
+            <table>
+                <tr>
+                    <th>Standard</th>
+                    <th>School Name</th>
+                    <th>Location</th>
+                </tr>
+                <tr>
+                    <td>10th (High School)</td>
+                    <td>Sarvoday High School</td>
+                    <td>Keshod</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Graduation Table -->
+        <div>
+            <h3 style="color:black;">Graduation</h3>
+            <table>
+                <tr>
+                    <th>Course</th>
+                    <th>University</th>
+                    <th>Subjects</th>
+                </tr>
+                <tr>
+                    <td>Bachelor Degree</td>
+                    <td>Noble University</td>
+                    <td>
+                        Web Designing,<br>
+                        C Programming,<br>
+                        C++ Programming,<br>
+                        DBMS,<br>
+                        IT Programming
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</section>
+
+<!-- Skills -->
+<section>
+    <h2>Skills</h2>
+
+    <div class="grid">
+
+        <div class="box">
+            <h3 style="color:black;">Technical Skills</h3>
+            <ul>
+                <li>C Programming</li>
+                <li>C++ Programming</li>
+                <li>Web Designing (HTML, CSS, JS Basics)</li>
+                <li>DBMS</li>
+                <li>IT Programming Concepts</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3 style="color:black;">Personal Skills</h3>
+            <ul>
+                <li>Problem Solving</li>
+                <li>Quick Learner</li>
+                <li>Teamwork</li>
+                <li>Adaptability</li>
+                <li>Strong Software Development Interest</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- Career -->
+<section>
+    <h2>Career</h2>
+    <div class="box">
+        <p>I am excited to start my career in <strong>software development</strong>.
+           My goal is to work on real-world applications, grow technically, and contribute to innovative projects.
+        </p>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact">
+    <h2>Contact</h2>
+    <div class="box">
+        <p><strong>Email:</strong> your-email@example.com</p>
+        <p><strong>Phone:</strong> 00000 00000</p>
+        <p><strong>LinkedIn:</strong> your-link</p>
+        <p><strong>GitHub:</strong> your-link</p>
+    </div>
+</section>
+
+<div class="footer">
+    © 2025 Sondarva Vikas | Portfolio Website
+</div>
+
+</body>
+</html>
